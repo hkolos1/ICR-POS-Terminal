@@ -13,7 +13,7 @@ import {
 } from 'common/types';
 import { INIT_CONTEXT, INIT_STATE } from 'common/assets';
 import { I18nContext } from 'common/contexts';
-import { IS_DEMO_MODE } from 'config';
+//import { IS_DEMO_MODE } from 'config';
 import * as A from '../creators/actions';
 import { createClosedOrdersViews, createTranslationHelper } from '../creators';
 import { getDemoData } from 'common/utils/demo';
@@ -21,7 +21,7 @@ import { CurrencyPosition } from 'common/enums';
 
 const store = localForage.createInstance({
   driver: localForage.INDEXEDDB,
-  name: 'AsatelitPOS',
+  name: 'ETFPOS',
 });
 
 const readContextFromLocalStorage = (initState: AppState): Promise<AppState> => {
@@ -46,7 +46,7 @@ export const AppContextProvider: React.FC = ({ children }) => {
     (async function updateState() {
       let demoData: Partial<AppState> = {};
       // Load data to display the application in demo mode
-      if (IS_DEMO_MODE) demoData = getDemoData();
+      if (INIT_STATE) demoData = getDemoData();
       // Rehydrate the app state
       const state = await readContextFromLocalStorage(INIT_STATE);
       // Setting up user preference settings

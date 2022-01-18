@@ -11,7 +11,7 @@ export function getDemoData(): AppState {
     ...INIT_STATE,
     settings: {
       ...INIT_STATE.settings,
-      name: 'My Cafeteria',
+      name: 'ETF Coffee Bar',
     },
   };
 
@@ -37,18 +37,38 @@ export function getDemoData(): AppState {
   const items = () => createItemActions(state(), updateState);
   const orders = () => createOrdersActions(state(), updateState);
 
+
+  const gazirana = categories().add({
+    name: 'Gazirana pića',
+    parentId: 'root',
+    color: 'red',
+    picture: I.soft,
+  });
+  const priroda = categories().add({
+    name: 'Prirodni sokovi',
+    parentId: 'root',
+    color: 'tomato',
+    picture: I.sokovi,
+  });
+  const topla = categories().add({
+    name: 'Topli napitci',
+    parentId: 'root',
+    color: 'coral',
+    picture: I.napitci,
+  });
   const subcat = categories().add({
-    name: 'Burgers And Sandwiches',
+    name: 'Hrana',
     parentId: 'root',
     color: 'gold',
+    picture: I.hrana,
   });
 
   taxes().add({
-    name: 'Tax',
+    name: 'Porez',
     applyToCustomAmounts: false,
     isEnabled: true,
-    isIncludedInPrice: false,
-    precentage: 5,
+    isIncludedInPrice: true,
+    precentage: 17,
   });
 
   const taxList = state()
@@ -56,17 +76,215 @@ export function getDemoData(): AppState {
     .map((tax) => tax.id);
 
   const itemsList: Partial<Item>[] = [
+
     {
-      name: 'Lemon lime Water',
-      barcode: '',
-      color: null,
-      parentId: Entities.RootCategoryId,
-      picture: null,
-      price: 0.75,
-      costPrice: 0.5,
+      name:'Red bull',
+      barcode:'',
+      color:'transparent',
+      parentId:'root',
+      picture: I.redbull,
+      price:5,
+      costPrice:2.3,
       taxes: taxList,
     },
     {
+      name:'Mineralna voda',
+      barcode:'',
+      color:'transparent',
+      parentId:'root',
+      picture: I.kiseljak,
+      price:2,
+      costPrice:0.7,
+      taxes: taxList,
+    },
+
+    {
+      name:'Cedevita',
+      barcode:'',
+      color:'orange',
+      parentId:'root',
+      picture: I.cedevita,
+      price:2.5,
+      costPrice:0.5,
+      taxes: taxList,
+    },
+
+    {
+      name:'Voda',
+      barcode:'',
+      color:null,
+      parentId:'root',
+      picture: I.olimpija,
+      price:2,
+      costPrice:0.5,
+      taxes: taxList,
+    },
+
+    {
+      name:'Sok od borovnice',
+      barcode:'',
+      color:'red',
+      parentId:priroda.id,
+      picture: I.borovnica,
+      price:5,
+      costPrice:3,
+      taxes: taxList,
+    },
+
+    {
+      name:'Sok od narandže',
+      barcode:'',
+      color:'orange',
+      parentId:priroda.id,
+      picture:I.narandza,
+      price:5,
+      costPrice:3,
+      taxes: taxList,
+    },
+
+    {
+      name:'Sok od jagode',
+      barcode:'',
+      color:'red',
+      parentId:priroda.id,
+      picture:I.jagoda,
+      price:5,
+      costPrice:3,
+      taxes: taxList,
+    },
+
+    {
+      name:'Sok od jabuke',
+      barcode:'',
+      color:'salmon',
+      parentId:priroda.id,
+      picture:I.jabuka,
+      price:5,
+      costPrice:3,
+      taxes: taxList,
+    },
+
+    {
+      name:'Sok od breskve',
+      barcode:'',
+      color:'gold',
+      parentId:priroda.id,
+      picture: I.breskva,
+      price:3,
+      costPrice:1,
+      taxes: taxList,
+    },
+
+    {
+      name:'Coca Cola',
+      barcode:'',
+      color:'red',
+      parentId:gazirana.id,
+      picture:I.cocaCola,
+      price:3,
+      costPrice:1,
+      taxes: taxList,
+    },
+
+    {
+      name:'Fanta',
+      barcode:'',
+      color:'orange',
+      parentId:gazirana.id,
+      picture: I.fanta,
+      price:3,
+      costPrice:1,
+      taxes: taxList,
+    },
+
+    {
+      name:'Sprite',
+      barcode:'',
+      color:null,
+      parentId:gazirana.id,
+      picture: I.sprite,
+      price:3,
+      costPrice:1,
+    },
+
+    {
+      name:'Schweppes Bitter Lemon',
+      barcode:'',
+      color:'gold',
+      parentId:gazirana.id,
+      picture: I.sveps,
+      price:3,
+      costPrice:1,
+      taxes: taxList,
+    },
+
+    {
+      name:'Coca Cola Zero',
+      barcode:'',
+      color:'red',
+      parentId:gazirana.id,
+      picture: I.cocaZero,
+      price:3,
+      costPrice:1,
+      taxes: taxList,
+    },
+
+    {
+      name:'Topla čokolada',
+      barcode:'',
+      color:'gold',
+      parentId: topla.id,
+      picture: I.cokolada,
+      price: 4,
+      costPrice:2,
+      taxes: taxList,
+    },
+
+    {
+      name:'Hamburger',
+      barcode:'',
+      color: 'red',
+      parentId: subcat.id,
+      picture: I.hambas,
+      price:7,
+      costPrice:3,
+      taxes: taxList,
+    },
+
+    {
+      name:'Cheeseburger',
+      barcode:'',
+      color:'tomato',
+      parentId:subcat.id,
+      picture: I.ciz,
+      price: 8,
+      costPrice: 4,
+      taxes: taxList,
+    },
+
+    {
+      name:'Hot dog',
+      barcode:'',
+      color:'coral',
+      parentId:subcat.id,
+      picture: I.dog,
+      price: 3,
+      costPrice: 1,
+      taxes: taxList,
+    },
+
+    {
+      name:'Espresso',
+      barcode:'',
+      color:'null',
+      parentId:topla.id,
+      picture: I.kafa,
+      price :2.5,
+      costPrice: 0.7,
+      taxes: taxList,
+    },
+
+    /*{
       name: 'Espresso',
       barcode: '',
       color: null,
@@ -86,6 +304,7 @@ export function getDemoData(): AppState {
       costPrice: 5.5,
       taxes: taxList,
     },
+
     {
       name: 'Cappucino',
       barcode: '',
@@ -135,7 +354,7 @@ export function getDemoData(): AppState {
       price: 12,
       costPrice: 7,
       taxes: taxList,
-    },
+    },*/
   ];
 
   itemsList.forEach((entity) => items().add(entity));

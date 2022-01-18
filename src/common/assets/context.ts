@@ -11,7 +11,7 @@ import {
 } from 'common/types';
 
 export const INIT_SETTINGS: Settings = {
-  currency: '$',
+  currency: 'KM',
   currencyPosition: CurrencyPosition.Right,
   weekStartsOn: WeekStartDays.Auto,
   isDeniedPrintingGuestChecks: false,
@@ -55,6 +55,8 @@ export const INIT_STATE: AppState = {
   settings: INIT_SETTINGS,
   taxes: [],
 };
+
+
 
 const INIT_ACTIONS = {} as AppActions;
 const INIT_VIEWS = {} as AppViews;
