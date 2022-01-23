@@ -1,0 +1,203 @@
+{
+  "common": {
+    "actions": "Akcije",
+    "add": "dodati",
+    "amount": "iznos",
+    "back": "nazad",
+    "browserDefault": "Koristite postavke pretraživača",
+    "cancel": "Otkaži",
+    "cash": "Gotovina",
+    "change": "Promjena",
+    "changeOutOf": "{{promjena}} promjena od {{iznos}}",
+    "chooseAnOption": "Odaberite opciju",
+    "clear": "obriši",
+    "close": "Zatvori",
+    "closeWithoutPayment": {
+      "label": "Zatvorite bez plaćanja",
+      "hint": "Molimo navedite razlog",
+      "reasons": {
+        "customerIsGone": "Kupac je otišao",
+        "waitersMistake": "Greška konobara",
+        "onTheHouse": "Na kucu"
+      }
+    },
+    "confirm": "Potvrdi",
+    "create": "Napravi",
+    "creditCard": "Bankovna kartica",
+    "dateRanges": {
+      "today": "Danas",
+      "yesterday": "Jučer",
+      "thisWeek": "Ova sedmica",
+      "lastWeek": "Prošla sedmica",
+      "thisMonth": "Ovaj mjesec",
+      "lastMonth": "Prošli mjesec",
+      "daysUpToToday": "dana do danas",
+      "daysStartingToday": "dana od danas",
+      "7days": "Posljednjih 7 dana",
+      "14days": "Posljednjih 14 dana",
+      "28days": "Posljednjih 28 dana",
+      "30days": "Posljednjih 30 dana",
+      "60days": "Posljednjih 60 dana",
+      "90days": "Posljednjih 90 dana",
+      "12months": "Posljednjih 12 meseci",
+      "thisYear": "Ova godina (januar - danas)",
+      "lastYear": "prošla godina",
+      "currentPeriod": "Tekući period",
+      "previousPeriod": "Prethodni period"
+    },
+    "default": "Default",
+    "delete": "Izbriši",
+    "deleteSelected": "Izbriši odabrano",
+    "details": "Detalji",
+    "each": "za jedan od.",
+    "edit": "Uredi",
+    "enabled": "Omogućeno",
+    "errors": {
+      "orderNotFound": "Traženi nalog ne postoji."
+    },
+    "exportToJSON": "Export u JSON",
+    "homeScreen": "Početni ekran",
+    "item": "Stavka",
+    "new": "Novo",
+    "next": "Sljedeći",
+    "no": "Ne",
+    "open": "Otvori",
+    "previous": "Prethodno",
+    "print": "Print",
+    "printTheReceipt": "Odštampajte račun",
+    "printedAt": "Odštampano na",
+    "purchaseSubtotal": "ukupan iznos kupovine",
+    "qty": "Količina",
+    "receipt#": "Račun # {{val}}",
+    "receipts": "Račun",
+    "remove": "Ukloni",
+    "restore": "Povrati",
+    "search": "Pretraga",
+    "searchProperyLabel": "Pretraga po vrijednosti",
+    "searchProperyPlaceholder": "Unesite naziv vrijednosti...",
+    "somethingWentWrong": "Došlo je do greške",
+    "tax": "Tax",
+    "total": "Ukupno",
+    "unnamedCategory": "Neimenovana kategorija",
+    "update": "Ažuriraj",
+    "update&ContinueEditing": "Ažurirajte i nastavite sa uređivanjem",
+    "view": "Pogledati",
+    "yes": "Da",
+    "weekdays": {
+      "monday": "Ponedjeljak",
+      "tuesday": "Utorak",
+      "wednesday": "Srijeda",
+      "thursday": "Četvrtak",
+      "friday": "Petak",
+      "saturday": "Subota",
+      "sunday": "Nedjelja",
+      "short": {
+        "monday": "Pon.",
+        "tuesday": "Uto.",
+        "wednesday": "Sri.",
+        "thursday": "Čet.",
+        "friday": "Pet.",
+        "saturday": "Sub.",
+        "sunday": "Ned."
+      }
+    }
+  },
+  "terminal": {
+    "charge": "Naplati",
+    "createNewReceipt": "Kreiraj novi",
+    "dailyReport": {
+      "menuLabel": "Dnevni izvještaj",
+      "openingTitle": "Dnevni izvještaj",
+      "editingTitle": "Odaberite period",
+      "emptyText": "Nema prodaje za navedeni period",
+      "reportTitle": "Izvještaj o prodaji",
+      "daysIncluded": "Uključeni dani",
+      "businessDate": "Radni dani",
+      "total": "Ukupno"
+    },
+    "title": "Terminal"
+  },
+  "admin": {
+    "title": "Admin",
+    "menuLabel": "Admin",
+    "menu": {
+      "dashboardLabel": "Kontrolna ploča",
+      "categoriesLabel": "Kategorije",
+      "itemsLabel": "Stavke",
+      "taxesLabel": "Porez",
+      "settingsLabel": "Postavke",
+      "exitLabel": "Natrag na terminal"
+    },
+    "dashboard": {
+      "title": "Dashboard",
+      "salesWidget": {
+        "averageSaleLabel": "Prosječna prodaja",
+        "grossSalesLabel": "Bruto prodaja",
+        "heatmapTitle": "po danu u sedmici i satu u danu",
+        "netSalesLabel": "Neto prihoda od prodaje",
+        "salesLabel": "Prodaja",
+        "salesSummaryOverviewTitle": "Sažetak prodaje: Pregled",
+        "todayLabel": "Danas,"
+      }
+    },
+    "categories": {
+      "title": "Kategorija",
+      "addCategoryLabel": "Nova kategorija",
+      "emptyListMessage": "Ovdje nema stavki."
+    },
+    "categoryEditor": {
+      "addTitle": "Dodaj kategoriju",
+      "editTitle": "Uredi kategoriju",
+      "nameLabel": "Ime",
+      "categoryLabel": "Roditeljska kategorija",
+      "colorLabel": "Boja",
+      "imageLabel": "Slika"
+    },
+    "items": {
+      "title": "Stavke",
+      "addItemLabel": "Nova stavka",
+      "emptyListMessage": "Ovdje nema stavki."
+    },
+    "itemEditor": {
+      "addItemTitle": "Dodaj stavku",
+      "editItemTitle": "Uredi stavku",
+      "nameLabel": "Ime",
+      "categoryLabel": "Kategorija",
+      "priceLabel": "Cijena",
+      "costPriceLabel": "Nabavna cijena",
+      "colorLabel": "Boja",
+      "imageLabel": "Slika",
+      "taxesLabel": "Porez"
+    },
+    "taxes": {
+      "title": "Porez",
+      "addItemLabel": "Novi porez",
+      "emptyListMessage": "Ovdje nema stavki."
+    },
+    "taxEditor": {
+      "addItemTitle": "Dodajte novi porez",
+      "editItemTitle": "Uredi porez",
+      "nameLabel": "Ime",
+      "precentageLabel": "Postotak",
+      "itemPricingLabel": "Cijene artikla",
+      "addTaxToItemPrice": "Dodajte porez na cijenu artikla",
+      "includeTaxInItemPrice": "Uključite porez u cijenu artikla",
+      "applyTaxToLabel": "Primijeniti porez na",
+      "applyToCustomAmounts": "Prilagođeni iznosi"
+    },
+    "settings": {
+      "title": "Postavke",
+      "businessNameLabel": "Naziv firme",
+      "businessNameDescription": "Naziv vašeg preduzeća se pojavljuje na računima i izvodima kreditnih kartica vaših klijenata",
+      "currencyLabel": "Prikaz valute",
+      "currencyPositionLabel": "Prikaz valute",
+      "firstDayOfTheWeekLabel": "Prvi dan u sedmici",
+      "languagePreferenceLabel": "Željeni jezik",
+      "languagePreferenceDescription": "Preferiram pogled {{name}} u",
+      "printReceiptLabel": "Odštampajte račun nakon kupovine",
+      "printReceiptDescription": "Odmah nakon uplate odštampajte račun.",
+      "disablePrintingGuestChecksLabel": "Dozvolite štampanje čekova gostiju",
+      "disablePrintingGuestChecksDescription": "Sakrij dugme za štampanje čekova gosta."
+    }
+  }
+}
