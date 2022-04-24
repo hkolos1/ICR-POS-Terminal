@@ -1,4 +1,10 @@
-# Point of Sale Terminal
+![](https://github.com/hkolos1/ICR-POS-Terminal/blob/master/doc/images/preview1.png)
+
+# ETF UNSA | Point Of Sale Terminal
+
+The app built using common web technologies including HTML, CSS and TypeScript on top of Facebook's [React][react] library and doesn't involve a server, all data is stored in IndexedDB.
+
+See live demo here: [https://icr-pos-terminal-etf.web.app](https://icr-pos-terminal-etf.web.app/)
 
 ### Tech Stack
 
