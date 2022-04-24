@@ -1,10 +1,4 @@
-![](https://raw.githubusercontent.com/asatelit/pwa-pos-terminal/master/doc/images/preview.jpg)
-
-# Online Client Side POS Terminal
-
-Asatelit Point of Sale (POS) Terminal is a simple browser-based progressive web application (PWA) that designed to help small business owners efficiently manage the day's sales and inventory turns. The app built using common web technologies including HTML, CSS and TypeScript on top of Facebook's [React][react] library and doesn't involve a server, all data is stored in IndexedDB.
-
-See live demo here: [https://pos.asatelit.com](https://pos.asatelit.com)
+# Point of Sale Terminal
 
 ### Tech Stack
 
@@ -23,8 +17,8 @@ See live demo here: [https://pos.asatelit.com](https://pos.asatelit.com)
 Just clone the repo, install the packages with `yarn` and run `yarn start`:
 
 ```bash
-$ git clone https://github.com/Asatelit/pwa-pos-terminal.git
-$ cd pwa-pos-terminal           # Change current directory to the newly created one
+$ git clone https://github.com/hkolos1/icr-pos-terminal.git
+$ cd icr-pos-terminal           # Change current directory to the newly created one
 $ yarn install                  # Install Node.js dependencies
 $ yarn start                    # Launch application.
 ```
